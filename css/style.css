@@ -1,0 +1,99 @@
+:root {
+  /* colors */
+  --color-primary: #003854;
+  --color-primary-a: #3a7185;
+  --color-primary-b: #54575e;
+  --color-secondary: #fdbc29;
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* spacing */
+  --margin-base: 0.5rem;
+
+  /* typograpy */
+  --font-size-base: 1rem;
+  --line-height-base: 1.5;
+  --font-family-base: sans-serif;
+}
+
+/* global box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* base body styles */
+body {
+  font-family: var(--font-family-base);
+  padding: var(--margin-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+/* base line height */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: var(--line-height-base);
+}
+
+/* base heading sizes */
+h1 {
+  font-size: calc(var(--font-size-base) * 3);
+}
+
+h2 {
+  font-size: calc(var(--font-size-base) * 2.5);
+}
+
+h3 {
+  font-size: calc(var(--font-size-base) * 2);
+}
+
+h4 {
+  font-size: calc(var(--font-size-base) * 1.5);
+}
+
+h5 {
+  font-size: calc(var(--font-size-base) * 1.25);
+}
+
+h5 {
+  font-size: var(--font-size-base);
+}
+
+/* //end heading */
+
+/* base pargraph */
+p {
+  font-size: var(--font-size-base);
+}
+
+/* base anchor color and text transform */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+/* //end anchor */
+
+/* base margin */
+p,
+li,
+iframe,
+video,
+audio {
+  margin-bottom: calc(var(--margin-base) * 2);
+}
+
+/* navigation listing */
+nav li {
+  --margin-base: 0;
+}
