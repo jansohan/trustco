@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trustco</title>
+  </head>
+
+  <body>
+    <!-- header: This includes the logo and main navigation and login/signup buttons -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="site-logo">
+              <!-- logo: multiple logos based on resolution -->
+              <picture>
+                <source media="(min-width:768px)" srcset="images/logo.jpg" />
+                <source
+                  media="(min-width:320px)"
+                  srcset="images/mobile-logo.jpg"
+                />
+                <img src="images/mobile-logo.jpg" alt="Trustco" />
+              </picture>
+              <!-- header: This includes the logo and main navigation -->
+            </div>
+          </div>
+          <div class="col-md-8">
+            <nav class="main-navigation">
+              <h2 class="hidden">Main navigation</h2>
+              <ul>
+                <li><a href="#" title="Features">Features</a></li>
+                <li><a href="#" title="Solutions">Solutions</a></li>
+                <li><a href="#" title="Company">Company</a></li>
+                <li><a href="#" title="Resources">Resources</a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-2">
+            <a href="#"><button>Login</button></a>
+            <a href="#"><button>Sign up</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //end header -->
+
+    <!-- main: This includes the page title and body content -->
+    <main class="main-content">
+      <h1>Page heading</h1>
+      <h2>Page sub heading</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </main>
+    <!-- //end Main -->
+
+    <!-- footer: This includes the copyright and footer navigation -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">&copy;2022-2023 Trustco</div>
+          <div class="col-md-8">
+            <nav class="footer-navigation">
+              <h2 class="hidden">Footer navigation</h2>
+              <ul class="text-center">
+                <li><a href="#" title="Term of Service">Term of Service</a></li>
+                <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-2">
+            <i class="earth">Earth Icon</i> <span>English</span>
+            <i class="drop-arrow">Dropdown Icon</i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- //end footer -->
+  </body>
+</html>
