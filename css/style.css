@@ -22,7 +22,7 @@
   --mx-auto: auto;
   --px-base: 0 1rem;
   --py-base: 1rem 0;
-  --py-double: 2rem 0;
+  --py-double: 2.5rem 0;
   --px-minor: 0 0.5rem;
   --button-base: 1rem 1.5rem;
   --py-super-extra: 8rem 0;
@@ -34,7 +34,7 @@
   --line-height-minor: 1.2;
   --line-height-single: 1;
   --line-height-extra: 1.56;
-  --font-family-base: "Lato", sans-serif; 
+  --font-family-base: "Lato", sans-serif;
 
   /* layout */
   --width-full: 100%;
@@ -48,7 +48,7 @@
   --display-block: block;
   --display-flex: flex;
   --flex-wrap: wrap;
-  --content-center: center;  
+  --content-center: center;
 
   /* misc */
   --cursor-pointer: pointer;
@@ -66,7 +66,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-family-base);  
+  font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   color: var(--color-base);
@@ -151,7 +151,7 @@ button,
 .button {
   border: 0;
   padding: var(--button-base);
-  border-radius: var(--radius-big);  
+  border-radius: var(--radius-big);
   background-color: var(--color-button-bg-base);
   color: var(--color-button-text-white);
   font-size: var(--font-size-base-button);
@@ -308,60 +308,6 @@ img {
   }
 }
 
-@media (min-width: 992px) {
-  .col-lg-auto {
-    width: auto;
-  }
-
-  .col-lg-1 {
-    width: 8.33333333%;
-  }
-
-  .col-lg-2 {
-    width: 16.66666667%;
-  }
-
-  .col-lg-3 {
-    width: 25%;
-  }
-
-  .col-lg-4 {
-    width: 33.33333333%;
-  }
-
-  .col-lg-5 {
-    width: 41.66666667%;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-  }
-
-  .col-lg-7 {
-    width: 58.33333333%;
-  }
-
-  .col-lg-8 {
-    width: 66.66666667%;
-  }
-
-  .col-lg-9 {
-    width: 75%;
-  }
-
-  .col-lg-10 {
-    width: 83.33333333%;
-  }
-
-  .col-lg-11 {
-    width: 91.66666667%;
-  }
-
-  .col-lg-12 {
-    width: var(--width-full);
-  }
-}
-
 @media (min-width: 1200px) {
   .col-xl-auto {
     width: auto;
@@ -487,12 +433,31 @@ img {
   line-height: var(--line-height-minor);
 }
 
-@media screen and (min-width: 1024px) {
+.desktop-only {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
   .hero-wrapper {
     padding: var(--py-super-extra);
   }
   .hero-inner {
     max-width: 709px;
   }
+  .desktop-only {
+    display: var(--display-block);
+  }
 }
 /* // end hero section */
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: calc(var(--font-size-base) * 2);
+  }
+  p {
+    font-size: var(--font-size-base);
+  }
+  .hero-inner-content {
+    padding: var(--py-double);
+  }
+}

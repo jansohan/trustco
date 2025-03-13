@@ -22,16 +22,7 @@
         <div class="row align-items-center">
           <div class="col-lg-2">
             <div class="site-logo">
-              <!-- logo: multiple logos based on resolution -->
-              <picture>
-                <source media="(min-width:768px)" srcset="images/logo.svg" />
-                <source
-                  media="(min-width:320px)"
-                  srcset="images/mobile-logo.svg"
-                />
-                <img src="images/mobile-logo.svg" alt="Trustco" />
-              </picture>
-              <!-- header: This includes the logo and main navigation -->
+              <img src="images/mobile-logo.svg" alt="Trustco" />
             </div>
           </div>
           <div class="col-lg-7">
@@ -59,33 +50,40 @@
 
     <!-- main: This includes the page title and body content -->
     <main class="main-content">
-      <section id="hero" class="bg-base hero-wrapper py-base">
+      <section id="hero" class="bg-base hero-wrapper py-double">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-2">
+            <div class="col-lg-2 desktop-only">
               <img src="images/hero-5.png" alt="hero 5" />
             </div>
             <div class="col-lg-8 text-center hero-inner">
-              <h1 class="mb-0">
-                Find a High-Potential Customers with <a href="#">Trustco</a>
-              </h1>
-              <p>
-                We provide sales teams and professionals with the knowledge,
-                skill and discipline they need to be 10x more successful.
-              </p>
-              <div
-                class="flex gap-extra justify-content-center align-items-center py-base"
-              >
-                <a href="https://www.example.com" class="button">Get started</a>
-                <a
-                  href="https://www.example.com"
-                  class="button button-transparent flex align-items-center"
-                  ><img src="images/play.svg" alt="play" /> Our Video</a
+              <div class="hero-inner-content">
+                <h1 class="mb-0">
+                  Find a High-Potential Customers with <a href="#">Trustco</a>
+                </h1>
+                <p>
+                  We provide sales teams and professionals with the knowledge,
+                  skill and discipline they need to be 10x more successful.
+                </p>
+                <div
+                  class="flex gap-extra justify-content-center align-items-center py-base"
                 >
+                  <a href="https://www.example.com" class="button"
+                    >Get started</a
+                  >
+                  <a
+                    href="https://www.example.com"
+                    class="button button-transparent flex align-items-center"
+                    ><img src="images/play.svg" alt="play" /> Our Video</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="col-lg-2">
-              <img src="images/hero-6.png" alt="hero 6" />
+            <div class="col-lg-2 flex justify-content-center">
+              <picture>
+                <source media="(min-width:768px)" srcset="images/hero-6.png" />
+                <img src="images/group-1.png" alt="Trustco" />
+              </picture>
             </div>
           </div>
         </div>
