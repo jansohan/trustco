@@ -14,6 +14,7 @@
   --font-size-base: 1rem;
   --line-height-base: 1.5;
   --font-family-base: sans-serif;
+  --fw-800: 800;
 }
 
 /* global box sizing */
@@ -34,10 +35,8 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
-p {
-  line-height: var(--line-height-base);
+h5 {
+  font-weight: var(--fw-800);
 }
 
 /* base heading sizes */
@@ -61,15 +60,12 @@ h5 {
   font-size: calc(var(--font-size-base) * 1.25);
 }
 
-h5 {
-  font-size: var(--font-size-base);
-}
-
 /* //end heading */
 
 /* base pargraph */
 p {
   font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
 }
 
 /* base anchor color and text transform */
