@@ -280,16 +280,23 @@
         <div class="wrapper">
           <div class="row align-items-center gap-super">
             <div class="col-md-7 position-relative">
-              <img src="images/image.png" alt="img" class="mr-super" />
+              <picture>
+                <source media="(min-width:768px)" srcset="images/image.png" />
+                <img
+                  src="images/image-mobile.png"
+                  alt="building-bridges"
+                  class="mr-super main-image"
+                />
+              </picture>
               <div
                 class="circle-box shadow text-center p-2 display-flex flex-column text-white align-items-center position-absolute radius-full"
               >
                 <div><img src="images/diamond.svg" alt="diamond" /></div>
                 <h4 class="mb-0">#1</h4>
-                <div>Best Award <br>2023</div>
+                <div>Best Award <br />2023</div>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 building-bridges-content">
               <h2 class="heading-extra line-height-super fw-700">
                 Building bridges between
                 <span class="highlighten-02">companies and customers</span>
