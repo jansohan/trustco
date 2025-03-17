@@ -939,6 +939,7 @@ img {
   }
 
   #blogs .heading-extra,
+  #cta-banner .heading-extra,
   #video-section .heading-extra,
   #building-bridges .heading-extra,
   #meet-founder .heading-extra,
@@ -1034,6 +1035,7 @@ img {
 
   #meet-founder,
   #blogs .heading-extra,
+  #cta-banner .heading-extra,
   #testimonials .heading-extra {
     text-align: var(--content-center);
   }
@@ -1091,6 +1093,17 @@ img {
   .card-column {
     padding-bottom: 1.5rem;
   }
+
+  #cta-banner {
+    padding-top: 3.125rem;
+    padding-bottom: 0;
+    text-align: var(--content-center);
+  }
+
+  #cta-banner .mb-extra{
+    --mb-extra: 0;
+  }
+
 }
 
 @media screen and (max-width: 990px) {
@@ -1117,6 +1130,10 @@ img {
 
   .posted {
     font-size: var(--font-size-small);
+  }
+
+  .cta-banner-bg {
+    background-image: none;
   }
 }
 
