@@ -833,7 +833,8 @@ img {
     display: var(--display-block);
   }
 
-  .heading-extra {
+  #video-section .heading-extra,
+  #building-bridges .heading-extra   {
     font-size: 1.875rem;
     line-height: 2.375rem;
   }
@@ -912,5 +913,17 @@ img {
 
   .circle-box h4 {
     line-height: var(--line-height-single);
+  }
+
+  #numbers .heading-extra {
+    --font-size-extra: 2.25rem;
+  }
+
+  #numbers .paragraph-extra {
+    --font-size-paragraph-extra: var(--font-size-base);
+  }
+
+  #numbers .row > div {
+    margin-bottom: 1.875rem;
   }
 }
