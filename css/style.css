@@ -56,6 +56,7 @@
   --font-size-small: 0.75rem;
   --font-size-extra: 3.75rem;
   --font-size-medium: 1.5rem;
+  --font-size-regular: 1.125rem;  
   --font-size-base-button: 1.125rem;
   --font-size-base-paragraph: 1.125rem;
   --font-size-paragraph-extra: 1.5rem;
@@ -728,6 +729,10 @@ img {
   font-size: var(--font-size-paragraph-extra);
 }
 
+.paragraph-small {
+  font-size: var(--font-size-small);
+}
+
 .radius-full {
   border-radius: var(--radius-full);
 }
@@ -964,10 +969,6 @@ img {
     margin-bottom: 1.5rem;
   }
 
-  #benefits .heading-medium {
-    font-size: 1.25rem;
-  }
-
   #benefits .paragraph-medium {
     font-size: 0.875rem;
   }
@@ -1057,6 +1058,26 @@ img {
   #blogs .row {
     justify-content: var(--content-center);
   }
+
+  .paragraph-extra {
+    --font-size-paragraph-extra: var(--font-size-base);
+  }
+  
+  .paragraph-medium {
+    --font-size-base-paragraph: var(--font-size-base);
+  }
+
+  .heading-medium {
+    --font-size-medium: var(--font-size-regular);
+  }
+
+  .p-minor {
+    --p-minor: 1rem;
+  }
+
+  .card-column {
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -1079,6 +1100,10 @@ img {
   #testimonials .row,
   #meet-founder .row {
     justify-content: var(--content-center);
+  }
+
+  .posted {
+    font-size: var(--font-size-small);
   }
 }
 
