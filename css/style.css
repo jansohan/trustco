@@ -736,10 +736,6 @@ img {
   color: var(--color-primary);
 }
 
-#pagination {
-  padding-top: 3.5rem;
-}
-
 #pagination li {
   padding: 0 0.313rem;
 }
@@ -780,6 +776,10 @@ img {
 }
 
 /* mobile menu */
+#menuToggle {
+  float: right;
+}
+
 #menuToggle input {
   width: 1.75rem;
   height: 1.25rem;
@@ -888,17 +888,8 @@ img {
     max-width: 44.313rem;
   }
 
-  .desktop-only {
-    display: var(--display-block);
-  }
-
   .site-header {
     background-color: var(--color-bg-base);
-  }
-
-  .width-medium {
-    width: 16rem;
-    margin-right: 1rem;
   }
 
   #building-bridges h2 {
@@ -927,20 +918,6 @@ img {
 
   .hero-inner-content {
     padding: var(--py-double);
-  }
-
-  #trusted-brands .row {
-    gap: var(--gap-double);
-    text-align: var(--content-center);
-    font-size: var(--font-size-minor);
-  }
-
-  .brand-images {
-    gap: var(--gap-double);
-  }
-
-  .mobile-only {
-    display: var(--display-block);
   }
 
   #blogs .heading-extra,
@@ -1055,7 +1032,8 @@ img {
     --font-size-base: var(--font-size-small);
   }
 
-  #testimonials, #blogs {
+  #testimonials,
+  #blogs {
     --py-super: 3.125rem 0;
   }
 
@@ -1074,5 +1052,48 @@ img {
 
   .mr-super {
     --mr-super: 0;
+  }
+
+  #blogs .row {
+    justify-content: var(--content-center);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .mobile-only {
+    display: var(--display-block);
+  }
+
+  #trusted-brands .row {
+    gap: var(--gap-double);
+    text-align: var(--content-center);
+    font-size: var(--font-size-minor);
+  }
+
+  .brand-images {
+    gap: var(--gap-double);
+  }
+
+  .brand-images,
+  #trusted-brands .row,
+  #testimonials .row,
+  #meet-founder .row {
+    justify-content: var(--content-center);
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .desktop-only {
+    display: var(--display-block);
+  }
+  #pagination {
+    padding-top: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .width-medium {
+    width: 16rem;
+    margin-right: 1rem;
   }
 }
