@@ -29,6 +29,7 @@
   /* spacing */
   --mx-auto: auto;
   --margin-base: 0.5rem;
+  --gap-minor: 0.35rem;
   --gap-base: 0.625rem;
   --gap-double: 1.5rem;
   --gap-extra: 2rem;
@@ -45,6 +46,7 @@
   --py-super-extra: 8rem 0;
   --p-medium: 2rem 1.5rem;
   --p-minor: 1.5rem;
+  --p-small: .5rem 1rem;
   --mb-medium: 2.125rem;
   --mb-extra: 3.75rem;
   --my-extra: 3.75rem 0;
@@ -534,6 +536,10 @@ img {
   gap: var(--gap-base);
 }
 
+.gap-minor {
+  gap: var(--gap-minor);
+}
+
 .gap-extra {
   gap: var(--gap-extra);
 }
@@ -673,6 +679,10 @@ img {
 
 .p-minor {
   padding: var(--p-minor);
+}
+
+.p-small {
+  padding: var(--p-small);
 }
 
 .mb-medium {
@@ -913,6 +923,43 @@ img {
 .site-footer nav li {
   padding-left: 0;
   font-size: var(--font-size-regular);
+}
+
+.site-credits a {
+  color: var(--color-highlighten-02);
+}
+
+.language-dropdown {
+  top: -4.5rem;
+  right: 0;
+}
+
+.language-dropdown li {
+  margin-bottom: 0;
+}
+
+.language-dropdown a {
+  padding: var(--p-small);
+  display: var(--display-block);
+  line-height: var(--line-height-single);
+}
+
+.language-dropdown a:hover {
+  background-color: var(--color-primary);
+  text-decoration: var(--none);
+}
+
+#language,
+.language-dropdown {
+  display: none;
+}
+
+label {
+  cursor: var(--cursor-pointer);
+}
+
+input:checked~.language-dropdown {
+  display: var(--display-block);
 }
 
 @media screen and (min-width: 768px) {
