@@ -1182,6 +1182,15 @@ input:checked~.language-dropdown {
     font-size: var(--font-size-base);
   }
 
+  .site-credits .row {
+    text-align: var(--content-center);
+    gap: var(--gap-base);
+  }
+  
+  .site-credits .justify-content-end {
+    justify-content: var(--content-center);
+  }
+
 }
 
 @media screen and (max-width: 990px) {
