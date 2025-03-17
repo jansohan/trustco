@@ -781,7 +781,7 @@ img {
     margin-top: 0;
     margin-bottom: 1.875rem;
   }
-  
+
   #building-bridges img {
     border-top-right-radius: var(--radius-base);
     border-bottom-right-radius: var(--radius-base);
@@ -865,5 +865,34 @@ img {
 
   .cards > div {
     margin-bottom: 1rem;
+  }
+
+  #building-bridges .row {
+    flex-direction: column-reverse;
+  }
+
+  .building-bridges-content {
+    padding: 2rem;
+    text-align: var(--content-center);
+  }
+
+  .circle-box {
+    width: 9.313rem;
+    height: 9.313rem;
+    padding: 1.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .circle-box img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .circle-box br {
+    display: var(--none);
+  }
+
+  .circle-box h4 {
+    line-height: var(--line-height-single);
   }
 }
