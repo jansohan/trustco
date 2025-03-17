@@ -327,15 +327,25 @@
 						<h2 class="heading-extra mb-0">We Believe people we trust</h3>
 					</div>
 					<div class="col-md-2">
-						<div>
+						<div class="desktop-only">
 							<a href="#" class="flex align-items-center justify-content-end">
 								See all <img src="images/arrow-right-line.svg" alt="arrow-right-line" />
 							</a>
 						</div>
+						<div id="pagination" class="mobile-only">
+							<nav>
+								<ul class="px-0 my-0 list-style-none display-flex justify-content-center">
+									<li><a href="#">1</a></li>
+									<li><a class="active">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 column">
 						<div class="bg-white button-radius-base box-shadow-dark p-minor h-full flex flex-column">
 							<div><img src="images/quote.png" alt="quote" /></div>
 							<p class="paragraph-extra mt-0">
@@ -353,7 +363,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 column">
 						<div class="bg-white button-radius-base box-shadow-dark p-minor h-full flex flex-column">
 							<div><img src="images/quote.png" alt="quote" /></div>
 							<p class="paragraph-extra mt-0">Easy to use, reasonably priced, and ensures I don’t drop the
@@ -372,15 +382,20 @@
 						</div>
 					</div>
 				</div>
-				<div id="pagination">
+				<div id="pagination" class="desktop-only">
 					<nav>
-						<ul class="my-0 list-style-none display-flex justify-content-center">
+						<ul class="px-0 my-0 list-style-none display-flex justify-content-center">
 							<li><a href="#">1</a></li>
 							<li><a class="active">2</a></li>
 							<li><a href="#">3</a></li>
 							<li><a href="#">4</a></li>
 						</ul>
 					</nav>
+				</div>
+				<div class="mobile-only py-base">
+					<a href="#" class="flex align-items-center justify-content-center">
+						See all <img src="images/arrow-right-line.svg" alt="arrow-right-line" />
+					</a>
 				</div>
 			</div>
 		</section>

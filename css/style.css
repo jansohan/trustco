@@ -498,6 +498,10 @@ img {
   padding: 2rem;
 }
 
+.px-0 {
+  padding: 0;
+}
+
 .ml-1 {
   margin-left: 1rem;
 }
@@ -912,7 +916,8 @@ img {
 
   #video-section .heading-extra,
   #building-bridges .heading-extra,
-  #meet-founder .heading-extra {
+  #meet-founder .heading-extra,
+  #testimonials .heading-extra {
     font-size: 1.875rem;
     line-height: 2.375rem;
   }
@@ -1006,7 +1011,7 @@ img {
     margin-bottom: 1.875rem;
   }
 
-  #meet-founder {
+  #meet-founder, #testimonials .heading-extra {
     text-align: var(--content-center);
   }
 
@@ -1016,5 +1021,21 @@ img {
 
   .tagline {
     --font-size-base: var(--font-size-small);
+  }
+
+  #testimonials {
+    padding: 3.125rem 0;
+  }
+  
+  #testimonials .mb-extra {
+    --mb-extra: 1.875rem;
+  }
+
+  #pagination {
+    padding-top: 1.875rem;
+  }
+
+  .column {
+    margin-bottom: 1.875rem;
   }
 }
