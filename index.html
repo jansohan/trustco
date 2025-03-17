@@ -1,348 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trustco</title>
-    <!-- Google font embed -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- //end Google font embed -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <!-- header: This includes the logo and main navigation and login/signup buttons -->
-    <header class="site-header py-medium position-relative">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- header left column -->
-          <div class="col-9 col-lg-2">
-            <div class="site-logo">
-              <img src="images/logo.svg" alt="Trustco" class="block" />
-            </div>
-          </div>
-          <!-- //end header left column -->
-          <!-- header middle -->
-          <div class="col-3 col-lg-7">
-            <nav role="navigation" class="main-navigation desktop-only">
-              <h2 class="hidden">Main navigation</h2>
-              <ul class="justify-content-center list-style-none spacing-none">
-                <li><a href="#" title="Features">Features</a></li>
-                <li><a href="#" title="Solutions">Solutions</a></li>
-                <li><a href="#" title="Company">Company</a></li>
-                <li><a href="#" title="Resources">Resources</a></li>
-                <li><a href="#" title="Contact">Contact</a></li>
-              </ul>
-            </nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Trustco</title>
+	<!-- Google font embed -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+		rel="stylesheet" />
+	<!-- //end Google font embed -->
+	<link rel="stylesheet" href="css/style.css" />
+</head>
 
-            <!-- mobile menu -->
-            <div id="menuToggle" class="mobile-only position-relative">
-              <input
-                type="checkbox"
-                id="menuCheckbox"
-                class="position-absolute block"
-              />
-              <span></span>
-              <span></span>
-              <span></span>
+<body>
+	<!-- header: This includes the logo and main navigation and login/signup buttons -->
+	<header class="site-header py-medium position-relative">
+		<div class="container">
+			<div class="row align-items-center">
+				<!-- header left column -->
+				<div class="col-9 col-lg-2">
+					<div class="site-logo">
+						<img src="images/logo.svg" alt="Trustco" class="block" />
+					</div>
+				</div>
+				<!-- //end header left column -->
+				<!-- header middle -->
+				<div class="col-3 col-lg-7">
+					<nav role="navigation" class="main-navigation desktop-only">
+						<h2 class="hidden">Main navigation</h2>
+						<ul class="justify-content-center list-style-none spacing-none">
+							<li><a href="#" title="Features">Features</a></li>
+							<li><a href="#" title="Solutions">Solutions</a></li>
+							<li><a href="#" title="Company">Company</a></li>
+							<li><a href="#" title="Resources">Resources</a></li>
+							<li><a href="#" title="Contact">Contact</a></li>
+						</ul>
+					</nav>
 
-              <div
-                id="menu"
-                class="visiblity-hidden position-absolute width-full-viewport height-full-viewport"
-              >
-                <ul class="list-style-none spacing-none">
-                  <li><a href="#" title="Features">Features</a></li>
-                  <li><a href="#" title="Solutions">Solutions</a></li>
-                  <li><a href="#" title="Company">Company</a></li>
-                  <li><a href="#" title="Resources">Resources</a></li>
-                  <li><a href="#" title="Contact">Contact</a></li>
-                </ul>
-                <div class="flex justify-content-between py-base">
-                  <a
-                    href="#"
-                    class="button button-medium button-radius-medium button-white"
-                    >Login</a
-                  >
-                  <a
-                    href="#"
-                    class="button button-medium button-radius-medium shadow-none"
-                    >Sign up</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- //end header middile -->
-          <!-- header right column -->
-          <div class="col-lg-3 desktop-only">
-            <div class="flex justify-content-end">
-              <a
-                href="#"
-                class="button button-medium button-radius-medium button-white"
-                >Login</a
-              >
-              <a
-                href="#"
-                class="button button-medium button-radius-medium shadow-none"
-                >Sign up</a
-              >
-            </div>
-          </div>
-          <!-- //end header right column -->
-        </div>
-      </div>
-    </header>
-    <!-- //end header -->
+					<!-- mobile menu -->
+					<div id="menuToggle" class="mobile-only position-relative">
+						<input type="checkbox" id="menuCheckbox" class="position-absolute block" />
+						<span></span>
+						<span></span>
+						<span></span>
 
-    <!-- main: This includes the page title and body content -->
-    <main class="main-content">
-      <section id="hero" class="bg-base hero-wrapper py-double">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-2 desktop-only">
-              <img src="images/hero-5.png" alt="hero 5" />
-            </div>
-            <div class="col-lg-8 text-center hero-inner">
-              <div class="hero-inner-content">
-                <h1 class="mb-0">
-                  Find a High-Potential Customers with <a href="#">Trustco</a>
-                </h1>
-                <p>
-                  We provide sales teams and professionals with the knowledge,
-                  skill and discipline they need to be 10x more successful.
-                </p>
-                <div
-                  class="flex gap-extra justify-content-center align-items-center py-base"
-                >
-                  <a href="https://www.example.com" class="button"
-                    >Get started</a
-                  >
-                  <a
-                    href="https://www.example.com"
-                    class="button button-transparent flex align-items-center"
-                    ><img src="images/play.svg" alt="play" /> Our Video</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 flex justify-content-center">
-              <picture>
-                <source media="(min-width:768px)" srcset="images/hero-6.png" />
-                <img src="images/group-1.png" alt="Trustco" />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
+						<div id="menu"
+							class="visiblity-hidden position-absolute width-full-viewport height-full-viewport">
+							<ul class="list-style-none spacing-none">
+								<li><a href="#" title="Features">Features</a></li>
+								<li><a href="#" title="Solutions">Solutions</a></li>
+								<li><a href="#" title="Company">Company</a></li>
+								<li><a href="#" title="Resources">Resources</a></li>
+								<li><a href="#" title="Contact">Contact</a></li>
+							</ul>
+							<div class="flex justify-content-between py-base">
+								<a href="#" class="button button-medium button-radius-medium button-white">Login</a>
+								<a href="#" class="button button-medium button-radius-medium shadow-none">Sign up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //end header middile -->
+				<!-- header right column -->
+				<div class="col-lg-3 desktop-only">
+					<div class="flex justify-content-end">
+						<a href="#" class="button button-medium button-radius-medium button-white">Login</a>
+						<a href="#" class="button button-medium button-radius-medium shadow-none">Sign up</a>
+					</div>
+				</div>
+				<!-- //end header right column -->
+			</div>
+		</div>
+	</header>
+	<!-- //end header -->
 
-      <section id="trusted-brands" class="py-extra">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-3">Trusted by the best in the world</div>
-            <div class="col-lg-9 flex brand-images">
-              <div>
-                <picture>
-                  <source
-                    media="(min-width:768px)"
-                    srcset="images/brands.png"
-                  />
-                  <img src="images/brand-mobile-01.png" alt="Brands" />
-                </picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    media="(min-width:768px)"
-                    srcset="images/spacer.png"
-                  />
-                  <img src="images/brand-mobile-02.png" alt="Brands" />
-                </picture>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+	<!-- main: This includes the page title and body content -->
+	<main class="main-content">
+		<section id="hero" class="bg-base hero-wrapper py-double">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-2 desktop-only">
+						<img src="images/hero-5.png" alt="hero 5" />
+					</div>
+					<div class="col-lg-8 text-center hero-inner">
+						<div class="hero-inner-content">
+							<h1 class="mb-0">
+								Find a High-Potential Customers with <a href="#">Trustco</a>
+							</h1>
+							<p>
+								We provide sales teams and professionals with the knowledge,
+								skill and discipline they need to be 10x more successful.
+							</p>
+							<div class="flex gap-extra justify-content-center align-items-center py-base">
+								<a href="https://www.example.com" class="button">Get started</a>
+								<a href="https://www.example.com"
+									class="button button-transparent flex align-items-center"><img src="images/play.svg"
+										alt="play" /> Our Video</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 flex justify-content-center">
+						<picture>
+							<source media="(min-width:768px)" srcset="images/hero-6.png" />
+							<img src="images/group-1.png" alt="Trustco" />
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <section id="video-section" class="bg-primary">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-7">
-              <h2 class="text-white mb-0 heading-extra line-height-super">
-                High-Level Sales <br /><span class="highlighten"
-                  >Teams & Professionals</span
-                >
-              </h2>
-            </div>
-            <div class="col-lg-5">
-              <p class="text-white">
-                Circuit is flexible and affordable and offers you exceptional
-                support to achieve your career goals. Circuit is a Global
-                training provider based across the UK that specialises.
-              </p>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-12 text-center">
-              <div
-                class="video-wrapper position-relative flex justify-content-center"
-              >
-                <img
-                  src="images/video.png"
-                  alt="High-Level Sales Teams & Professionals"
-                  class="display-flex"
-                />
-                <div class="video-play position-absolute">
-                  <a href="https://youtube.com/" target="_blank"
-                    ><img src="images/play-white.svg" alt="video play"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+		<section id="trusted-brands" class="py-extra">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3">Trusted by the best in the world</div>
+					<div class="col-lg-9 flex brand-images">
+						<div>
+							<picture>
+								<source media="(min-width:768px)" srcset="images/brands.png" />
+								<img src="images/brand-mobile-01.png" alt="Brands" />
+							</picture>
+						</div>
+						<div>
+							<picture>
+								<source media="(min-width:768px)" srcset="images/spacer.png" />
+								<img src="images/brand-mobile-02.png" alt="Brands" />
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <section id="benefits">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-3 width-medium benefit-header">
-              <a class="button shadow-none mb-3" href="#">Beneficial</a>
-              <h2 class="fw-700">Beneficial Elements</h2>
-              <p>
-                An awesome & poweful tools for your business, increase business
-                revenue
-              </p>
-            </div>
-            <div class="col-lg-9">
-              <div class="row cards">
-                <div class="col-lg-4">
-                  <div class="p-medium bg-light radius-base">
-                    <img
-                      src="images/illust-1.png"
-                      alt="Happy Customers"
-                      class="display-flex mb-medium"
-                    />
+		<section id="video-section" class="bg-primary">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-7">
+						<h2 class="text-white mb-0 heading-extra line-height-super">
+							High-Level Sales <br /><span class="highlighten">Teams & Professionals</span>
+						</h2>
+					</div>
+					<div class="col-lg-5">
+						<p class="text-white">
+							Circuit is flexible and affordable and offers you exceptional
+							support to achieve your career goals. Circuit is a Global
+							training provider based across the UK that specialises.
+						</p>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-12 text-center">
+						<div class="video-wrapper position-relative flex justify-content-center">
+							<img src="images/video.png" alt="High-Level Sales Teams & Professionals"
+								class="display-flex" />
+							<div class="video-play position-absolute">
+								<a href="https://youtube.com/" target="_blank"><img src="images/play-white.svg"
+										alt="video play" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                    <h3 class="fw-700 heading-medium mb-1">Happy Customers</h3>
-                    <p class="color-text-base paragraph-medium">
-                      Productive agents are happy agents. Give them all the
-                      support tools and information they need to best serve your
-                      customers.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="p-medium bg-light radius-base">
-                    <img
-                      src="images/illust-2.png"
-                      alt="Best Integrations"
-                      class="display-flex mb-medium"
-                    />
-                    <h3 class="fw-700 heading-medium mb-1">
-                      Best Integrations
-                    </h3>
-                    <p class="color-text-base paragraph-medium">
-                      Our software is powerful enough to handle the most complex
-                      business, yet flexible enough to scale with you as you
-                      grow.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="p-medium bg-light radius-base">
-                    <img
-                      src="images/illust-3.png"
-                      alt="Grow Without Problems"
-                      class="display-flex mb-medium"
-                    />
-                    <h3 class="fw-700 heading-medium mb-1">
-                      Grow Without Problems
-                    </h3>
-                    <p class="color-text-base paragraph-medium">
-                      with evaluating in depth variety of data sets and
-                      including the speed of tech adaptation we can build
-                      bridges between any companies and their customers.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+		<section id="benefits">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3 width-medium benefit-header">
+						<a class="button shadow-none mb-3" href="#">Beneficial</a>
+						<h2 class="fw-700">Beneficial Elements</h2>
+						<p>
+							An awesome & poweful tools for your business, increase business
+							revenue
+						</p>
+					</div>
+					<div class="col-lg-9">
+						<div class="row cards">
+							<div class="col-lg-4">
+								<div class="p-medium bg-light radius-base">
+									<img src="images/illust-1.png" alt="Happy Customers"
+										class="display-flex mb-medium" />
 
-      <section id="building-bridges">
-        <div class="wrapper">
-          <div class="row align-items-center gap-super">
-            <div class="col-md-7 position-relative">
-              <picture>
-                <source media="(min-width:768px)" srcset="images/image.png" />
-                <img
-                  src="images/image-mobile.png"
-                  alt="building-bridges"
-                  class="mr-super main-image"
-                />
-              </picture>
-              <div
-                class="circle-box shadow text-center p-2 display-flex flex-column text-white align-items-center position-absolute radius-full"
-              >
-                <div><img src="images/diamond.svg" alt="diamond" /></div>
-                <h4 class="mb-0">#1</h4>
-                <div>Best Award <br />2023</div>
-              </div>
-            </div>
-            <div class="col-md-5 building-bridges-content">
-              <h2 class="heading-extra line-height-super fw-700">
-                Building bridges between
-                <span class="highlighten-02">companies and customers</span>
-              </h2>
-              <p>
-                with evaluating in depth variety of data sets and including the
-                speed of tech adaptation we can build birdges between any
-                companies and their customers.
-              </p>
-              <div>
-                <a href="#" class="button">
-                  View Reports<img
-                    src="images/next.svg"
-                    alt="next"
-                    class="ml-1"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- //end Main -->
+									<h3 class="fw-700 heading-medium mb-1">Happy Customers</h3>
+									<p class="color-text-base paragraph-medium">
+										Productive agents are happy agents. Give them all the
+										support tools and information they need to best serve your
+										customers.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="p-medium bg-light radius-base">
+									<img src="images/illust-2.png" alt="Best Integrations"
+										class="display-flex mb-medium" />
+									<h3 class="fw-700 heading-medium mb-1">
+										Best Integrations
+									</h3>
+									<p class="color-text-base paragraph-medium">
+										Our software is powerful enough to handle the most complex
+										business, yet flexible enough to scale with you as you
+										grow.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="p-medium bg-light radius-base">
+									<img src="images/illust-3.png" alt="Grow Without Problems"
+										class="display-flex mb-medium" />
+									<h3 class="fw-700 heading-medium mb-1">
+										Grow Without Problems
+									</h3>
+									<p class="color-text-base paragraph-medium">
+										with evaluating in depth variety of data sets and
+										including the speed of tech adaptation we can build
+										bridges between any companies and their customers.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- footer: This includes the copyright and footer navigation -->
-    <footer class="site-footer py-base">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-2">&copy;2022-2023 Trustco</div>
-          <div class="col-lg-8">
-            <nav class="footer-navigation">
-              <h2 class="hidden">Footer navigation</h2>
-              <ul class="justify-content-center list-style-none spacing-none">
-                <li><a href="#" title="Term of Service">Term of Service</a></li>
-                <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-lg-2">
-            <i class="earth">Earth Icon</i> <span>English</span>
-            <i class="drop-arrow">Dropdown Icon</i>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- //end footer -->
-  </body>
+		<section id="building-bridges">
+			<div class="wrapper">
+				<div class="row align-items-center gap-super">
+					<div class="col-md-7 position-relative">
+						<picture>
+							<source media="(min-width:768px)" srcset="images/image.png" />
+							<img src="images/image-mobile.png" alt="building-bridges" class="mr-super main-image" />
+						</picture>
+						<div
+							class="circle-box shadow text-center p-2 display-flex flex-column text-white align-items-center position-absolute radius-full">
+							<div><img src="images/diamond.svg" alt="diamond" /></div>
+							<h4 class="mb-0">#1</h4>
+							<div>Best Award <br />2023</div>
+						</div>
+					</div>
+					<div class="col-md-5 building-bridges-content">
+						<h2 class="heading-extra line-height-super fw-700">
+							Building bridges between
+							<span class="highlighten-02">companies and customers</span>
+						</h2>
+						<p>
+							with evaluating in depth variety of data sets and including the
+							speed of tech adaptation we can build birdges between any
+							companies and their customers.
+						</p>
+						<div>
+							<a href="#" class="button">
+								View Reports<img src="images/next.svg" alt="next" class="ml-1" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="numbers" class="py-super">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="text-center">
+							<h3 class="heading-extra mb-0 heading-color-primary">$65 M</h3>
+							<div class="paragraph-extra">Generate sales</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center">
+							<h3 class="heading-extra mb-0 heading-color-primary">$58 M</h3>
+							<div class="paragraph-extra">Grew revenue</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center">
+							<h3 class="heading-extra mb-0 heading-color-primary">12</h3>
+							<div class="paragraph-extra">Countires</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center">
+							<h3 class="heading-extra mb-0 heading-color-primary">16k+</h3>
+							<div class="paragraph-extra">Grew customers</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+	</main>
+	<!-- //end Main -->
+
+	<!-- footer: This includes the copyright and footer navigation -->
+	<footer class="site-footer py-base">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-2">&copy;2022-2023 Trustco</div>
+				<div class="col-lg-8">
+					<nav class="footer-navigation">
+						<h2 class="hidden">Footer navigation</h2>
+						<ul class="justify-content-center list-style-none spacing-none">
+							<li><a href="#" title="Term of Service">Term of Service</a></li>
+							<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-2">
+					<i class="earth">Earth Icon</i> <span>English</span>
+					<i class="drop-arrow">Dropdown Icon</i>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- //end footer -->
+</body>
+
 </html>

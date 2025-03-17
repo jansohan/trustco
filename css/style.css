@@ -33,6 +33,7 @@
   --py-medium: 1.5rem 0;
   --py-double: 2.5rem 0;
   --py-extra: 3.125rem 0;
+  --py-super: 6.25rem 0;
   --p-extra: 3rem;
   --py-super-extra: 8rem 0;
   --p-medium: 2rem 1.5rem;
@@ -42,18 +43,19 @@
   /* typograpy */
   --font-size-base: 1rem;
   --font-size-minor: 0.85rem;
-  --font-size-base-button: 1.125rem;
-  --font-size-base-paragraph: 1.125rem;
   --font-size-extra: 3.75rem;
   --font-size-medium: 1.5rem;
+  --font-size-base-button: 1.125rem;
+  --font-size-base-paragraph: 1.125rem;
+  --font-size-paragraph-extra: 1.5rem;  
   --line-height-base: 1.5;
   --line-height-minor: 1.2;
   --line-height-single: 1;
   --line-height-extra: 1.56;
-  --line-height-super: 4.5rem;
-  --font-family-base: "Lato", sans-serif;
+  --line-height-super: 4.5rem;  
   --fw-800: 800;
   --fw-700: 700;
+  --font-family-base: "Lato", sans-serif;
 
   /* layout */
   --width-full: 100%;
@@ -110,6 +112,7 @@ body {
 
 h1 {
   font-size: calc(var(--font-size-base) * 4);
+  font-weight: var(--fw-800);
 }
 
 h2 {
@@ -155,7 +158,6 @@ h3,
 h4,
 h5 {
   margin-top: 0;
-  font-weight: var(--fw-800);
 }
 
 p,
@@ -521,6 +523,10 @@ img {
   padding: var(--py-extra);
 }
 
+.py-super {
+  padding: var(--py-super);
+}
+
 .mx-auto {
   margin: var(--mx-auto);
 }
@@ -606,6 +612,10 @@ img {
   padding-bottom: var(--mb-medium);
 }
 
+.line-height-single {
+  line-height: var(--line-height-single);
+}
+
 .line-height-super {
   line-height: var(--line-height-super);
 }
@@ -642,8 +652,16 @@ img {
   font-size: var(--font-size-base-paragraph);
 }
 
+.paragraph-extra {
+  font-size: var(--font-size-paragraph-extra);
+}
+
 .radius-full {
   border-radius: var(--radius-full);
+}
+
+.heading-color-primary {
+  color: var(--color-primary);
 }
 
 /* //end utility styles */
