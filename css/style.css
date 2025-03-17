@@ -43,16 +43,17 @@
   /* typograpy */
   --font-size-base: 1rem;
   --font-size-minor: 0.85rem;
+  --font-size-small: 0.75rem;
   --font-size-extra: 3.75rem;
   --font-size-medium: 1.5rem;
   --font-size-base-button: 1.125rem;
   --font-size-base-paragraph: 1.125rem;
-  --font-size-paragraph-extra: 1.5rem;  
+  --font-size-paragraph-extra: 1.5rem;
   --line-height-base: 1.5;
   --line-height-minor: 1.2;
   --line-height-single: 1;
   --line-height-extra: 1.56;
-  --line-height-super: 4.5rem;  
+  --line-height-super: 4.5rem;
   --fw-800: 800;
   --fw-700: 700;
   --font-family-base: "Lato", sans-serif;
@@ -195,6 +196,7 @@ button,
   line-height: var(--line-height-extra);
   cursor: var(--cursor-pointer);
   box-shadow: 0 1.438rem 2.938rem 0 var(--color-box-shadow);
+  font-weight: var(--fw-700);
   display: inline-flex;
 }
 
@@ -246,7 +248,7 @@ img {
   margin: 0 -1.25rem;
 }
 
-.row > * {
+.row>* {
   flex: 0 0 auto;
   flex-shrink: 0;
   width: var(--width-full);
@@ -707,18 +709,18 @@ img {
   transform-origin: 0% var(--width-full);
 }
 
-#menuToggle input:checked ~ span {
+#menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-0.125rem, -0.063rem);
   background: var(--color-black);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2) {
+#menuToggle input:checked~span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -0.063rem);
 }
 
@@ -739,10 +741,11 @@ img {
   font-size: calc(var(--font-size-base) * 1.25);
 }
 
-#menuToggle input:checked ~ div {
+#menuToggle input:checked~div {
   transform: var(--none);
   --hidden: var(--visible);
 }
+
 /* //end mobile menu */
 
 #video-section {
@@ -838,7 +841,8 @@ img {
   }
 
   #video-section .heading-extra,
-  #building-bridges .heading-extra   {
+  #building-bridges .heading-extra,
+  #meet-founder .heading-extra {
     font-size: 1.875rem;
     line-height: 2.375rem;
   }
@@ -886,7 +890,7 @@ img {
     font-size: 0.875rem;
   }
 
-  .cards > div {
+  .cards>div {
     margin-bottom: 1rem;
   }
 
@@ -923,11 +927,24 @@ img {
     --font-size-extra: 2.25rem;
   }
 
-  #numbers .paragraph-extra {
+  #numbers .paragraph-extra,
+  #meet-founder .paragraph-extra {
     --font-size-paragraph-extra: var(--font-size-base);
   }
 
-  #numbers .row > div {
+  #numbers .row>div {
     margin-bottom: 1.875rem;
+  }
+
+  #meet-founder {
+    text-align: var(--content-center);
+  }
+
+  #meet-founder h5 {
+    font-size: var(--font-size-base);
+  }
+  
+  .tagline {
+    --font-size-base: var(--font-size-small);
   }
 }
