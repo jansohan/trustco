@@ -546,11 +546,11 @@ img {
   color: var(--color-secondary);
 }
 
-.heading-extra  {
-  font-size: calc(var(--font-size-base)*3.5);
+.heading-extra {
+  font-size: calc(var(--font-size-base) * 3.5);
 }
 
-.line-height-super  {
+.line-height-super {
   line-height: var(--line-height-super);
 }
 
@@ -566,52 +566,6 @@ img {
 
 .hero-inner h1 {
   line-height: var(--line-height-minor);
-}
-
-@media screen and (min-width: 768px) {
-  .hero-wrapper {
-    padding: var(--py-super-extra);
-  }
-
-  .hero-inner {
-    max-width: 44.313rem;
-  }
-
-  .desktop-only {
-    display: var(--display-block);
-  }
-
-  .site-header {
-    background-color: var(--color-bg-base);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  h1 {
-    font-size: calc(var(--font-size-base) * 2);
-  }
-
-  p {
-    font-size: var(--font-size-base);
-  }
-
-  .hero-inner-content {
-    padding: var(--py-double);
-  }
-
-  #trusted-brands .row {
-    gap: var(--gap-double);
-    text-align: var(--content-center);
-    font-size: var(--font-size-minor);
-  }
-
-  .brand-images {
-    gap: var(--gap-double);
-  }
-
-  .mobile-only {
-    display: var(--display-block);
-  }
 }
 
 /* mobile menu */
@@ -690,7 +644,7 @@ img {
 }
 
 .video-wrapper {
-  padding-top: 3.75rem;
+  margin-top: 3.75rem;
 }
 
 .video-play {
@@ -700,18 +654,68 @@ img {
   margin-left: -3.75rem;
 }
 
-/* debug */
-/* div {
-  outline: 1px dashed blue;
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    padding: var(--py-super-extra);
+  }
+
+  .hero-inner {
+    max-width: 44.313rem;
+  }
+
+  .desktop-only {
+    display: var(--display-block);
+  }
+
+  .site-header {
+    background-color: var(--color-bg-base);
+  }
 }
-span {
-  outline: 1px solid green;
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: calc(var(--font-size-base) * 2);
+  }
+
+  p {
+    font-size: var(--font-size-base);
+  }
+
+  .hero-inner-content {
+    padding: var(--py-double);
+  }
+
+  #trusted-brands .row {
+    gap: var(--gap-double);
+    text-align: var(--content-center);
+    font-size: var(--font-size-minor);
+  }
+
+  .brand-images {
+    gap: var(--gap-double);
+  }
+
+  .mobile-only {
+    display: var(--display-block);
+  }
+
+  .heading-extra {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+  }
+
+  #video-section {
+    padding-top: 3.125rem;
+  }
+
+  .video-wrapper {
+    margin-top: 2rem;
+  }
+
+  .video-play {
+    margin-top: -1.099rem;
+    margin-left: -1.099rem;
+    width: 2.199rem;
+    height: 2.199rem;
+  }
 }
-p,
-li {
-  outline: 1px solid purple;
-}
-a {
-  outline: 1px solid red;
-} */
-/* // end debug */
