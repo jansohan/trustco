@@ -4,31 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trustco</title>
+    <!-- Google font embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //end Google font embed -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <!-- header: This includes the logo and main navigation and login/signup buttons -->
-    <header>
+    <header class="site-header">
       <div class="container">
-        <div class="row">
-          <div class="col-md-2">
+        <div class="row align-items-center">
+          <div class="col-lg-2">
             <div class="site-logo">
               <!-- logo: multiple logos based on resolution -->
               <picture>
-                <source media="(min-width:768px)" srcset="images/logo.jpg" />
+                <source media="(min-width:768px)" srcset="images/logo.svg" />
                 <source
                   media="(min-width:320px)"
-                  srcset="images/mobile-logo.jpg"
+                  srcset="images/mobile-logo.svg"
                 />
-                <img src="images/mobile-logo.jpg" alt="Trustco" />
+                <img src="images/mobile-logo.svg" alt="Trustco" />
               </picture>
               <!-- header: This includes the logo and main navigation -->
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-lg-7">
             <nav class="main-navigation">
               <h2 class="hidden">Main navigation</h2>
-              <ul>
+              <ul class="justify-content-center">
                 <li><a href="#" title="Features">Features</a></li>
                 <li><a href="#" title="Solutions">Solutions</a></li>
                 <li><a href="#" title="Company">Company</a></li>
@@ -37,9 +46,11 @@
               </ul>
             </nav>
           </div>
-          <div class="col-md-2">
-            <a href="#"><button>Login</button></a>
-            <a href="#"><button>Sign up</button></a>
+          <div class="col-lg-3">
+            <div class="flex gap-extra py-base justify-content-center">
+              <a href="#" class="button">Login</a>
+              <a href="#" class="button">Sign up</a>
+            </div>
           </div>
         </div>
       </div>
@@ -48,37 +59,55 @@
 
     <!-- main: This includes the page title and body content -->
     <main class="main-content">
-      <h1>Page heading</h1>
-      <h2>Page sub heading</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+      <section id="hero" class="bg-base hero-wrapper py-base">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-2">
+              <img src="images/hero-5.png" alt="hero 5" />
+            </div>
+            <div class="col-lg-8 text-center hero-inner">
+              <h1 class="mb-0">
+                Find a High-Potential Customers with <a href="#">Trustco</a>
+              </h1>
+              <p>
+                We provide sales teams and professionals with the knowledge,
+                skill and discipline they need to be 10x more successful.
+              </p>
+              <div
+                class="flex gap-extra justify-content-center align-items-center py-base"
+              >
+                <a href="https://www.example.com" class="button">Get started</a>
+                <a
+                  href="https://www.example.com"
+                  class="button button-transparent flex align-items-center"
+                  ><img src="images/play.svg" alt="play" /> Our Video</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <img src="images/hero-6.png" alt="hero 6" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- //end Main -->
 
     <!-- footer: This includes the copyright and footer navigation -->
-    <footer class="site-footer">
+    <footer class="site-footer py-base">
       <div class="container">
-        <div class="row">
-          <div class="col-md-2">&copy;2022-2023 Trustco</div>
-          <div class="col-md-8">
+        <div class="row align-items-center">
+          <div class="col-lg-2">&copy;2022-2023 Trustco</div>
+          <div class="col-lg-8">
             <nav class="footer-navigation">
               <h2 class="hidden">Footer navigation</h2>
-              <ul class="text-center">
+              <ul class="justify-content-center">
                 <li><a href="#" title="Term of Service">Term of Service</a></li>
                 <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
               </ul>
             </nav>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <i class="earth">Earth Icon</i> <span>English</span>
             <i class="drop-arrow">Dropdown Icon</i>
           </div>
