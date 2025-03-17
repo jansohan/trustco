@@ -19,6 +19,7 @@
   --color-base: #12141d;
   --color-box-shadow: #043a533d;
   --color-box-shadow-dark: #00000014;
+  --color-box-shadow-hover: #043A5312;
   --color-menu-bg: #ededed;
   --color-text-base: #404040;
   --color-highlighten-02: #92a7b0;
@@ -55,6 +56,7 @@
   --font-size-small: 0.75rem;
   --font-size-extra: 3.75rem;
   --font-size-medium: 1.5rem;
+  --font-size-regular: 1.125rem;  
   --font-size-base-button: 1.125rem;
   --font-size-base-paragraph: 1.125rem;
   --font-size-paragraph-extra: 1.5rem;
@@ -102,6 +104,7 @@
   --z-index-base: 1;
   --z-index-minor: 2;
   --shadow: 0 1.438rem 2.938rem 0 var(--color-box-shadow);
+  --shadow-hover: 0 1.438rem 2.938rem 0 var(--color-box-shadow);
 }
 
 /* global box sizing */
@@ -726,16 +729,16 @@ img {
   font-size: var(--font-size-paragraph-extra);
 }
 
+.paragraph-small {
+  font-size: var(--font-size-small);
+}
+
 .radius-full {
   border-radius: var(--radius-full);
 }
 
 .heading-color-primary {
   color: var(--color-primary);
-}
-
-#pagination {
-  padding-top: 3.5rem;
 }
 
 #pagination li {
@@ -761,12 +764,16 @@ img {
 
 /* //end utility styles */
 
+.brand {
+  color: var(--color-primary);
+}
+
 .card-column {
   max-width: 23.75rem;
 }
 
 .hover-card:hover {
-  box-shadow: 0px 50px 80px 0px #043A5312;
+  box-shadow: 0 3.125rem 5rem 0 var(--color-box-shadow-hover);
 }
 
 .hero-inner h1 {
@@ -774,6 +781,10 @@ img {
 }
 
 /* mobile menu */
+#menuToggle {
+  float: right;
+}
+
 #menuToggle input {
   width: 1.75rem;
   height: 1.25rem;
@@ -882,17 +893,8 @@ img {
     max-width: 44.313rem;
   }
 
-  .desktop-only {
-    display: var(--display-block);
-  }
-
   .site-header {
     background-color: var(--color-bg-base);
-  }
-
-  .width-medium {
-    width: 16rem;
-    margin-right: 1rem;
   }
 
   #building-bridges h2 {
@@ -923,20 +925,7 @@ img {
     padding: var(--py-double);
   }
 
-  #trusted-brands .row {
-    gap: var(--gap-double);
-    text-align: var(--content-center);
-    font-size: var(--font-size-minor);
-  }
-
-  .brand-images {
-    gap: var(--gap-double);
-  }
-
-  .mobile-only {
-    display: var(--display-block);
-  }
-
+  #blogs .heading-extra,
   #video-section .heading-extra,
   #building-bridges .heading-extra,
   #meet-founder .heading-extra,
@@ -978,10 +967,6 @@ img {
     --font-size-base-button: 0.85rem;
     --button-base: 0.25rem 1rem;
     margin-bottom: 1.5rem;
-  }
-
-  #benefits .heading-medium {
-    font-size: 1.25rem;
   }
 
   #benefits .paragraph-medium {
@@ -1034,7 +1019,9 @@ img {
     margin-bottom: 1.875rem;
   }
 
-  #meet-founder, #testimonials .heading-extra {
+  #meet-founder,
+  #blogs .heading-extra,
+  #testimonials .heading-extra {
     text-align: var(--content-center);
   }
 
@@ -1046,10 +1033,12 @@ img {
     --font-size-base: var(--font-size-small);
   }
 
-  #testimonials {
-    padding: 3.125rem 0;
+  #testimonials,
+  #blogs {
+    --py-super: 3.125rem 0;
   }
-  
+
+  #blogs .mb-extra,
   #testimonials .mb-extra {
     --mb-extra: 1.875rem;
   }
@@ -1060,5 +1049,76 @@ img {
 
   .column {
     margin-bottom: 1.875rem;
+  }
+
+  .mr-super {
+    --mr-super: 0;
+  }
+
+  #blogs .row {
+    justify-content: var(--content-center);
+  }
+
+  .paragraph-extra {
+    --font-size-paragraph-extra: var(--font-size-base);
+  }
+  
+  .paragraph-medium {
+    --font-size-base-paragraph: var(--font-size-base);
+  }
+
+  .heading-medium {
+    --font-size-medium: var(--font-size-regular);
+  }
+
+  .p-minor {
+    --p-minor: 1rem;
+  }
+
+  .card-column {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .mobile-only {
+    display: var(--display-block);
+  }
+
+  #trusted-brands .row {
+    gap: var(--gap-double);
+    text-align: var(--content-center);
+    font-size: var(--font-size-minor);
+  }
+
+  .brand-images {
+    gap: var(--gap-double);
+  }
+
+  .brand-images,
+  #trusted-brands .row,
+  #testimonials .row,
+  #meet-founder .row {
+    justify-content: var(--content-center);
+  }
+
+  .posted {
+    font-size: var(--font-size-small);
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .desktop-only {
+    display: var(--display-block);
+  }
+  #pagination {
+    padding-top: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .width-medium {
+    width: 16rem;
+    margin-right: 1rem;
   }
 }
