@@ -232,6 +232,11 @@ button:hover,
   box-shadow: none;
 }
 
+.button-secondary {
+  --color-button-bg-base: var(--color-secondary);
+  box-shadow: none;
+}
+
 .button-medium {
   --line-height-extra: var(--line-height-single);
 }
@@ -516,14 +521,6 @@ img {
   margin-left: 1rem;
 }
 
-.bg-base {
-  background-color: var(--color-bg-base);
-}
-
-.bg-primary {
-  background-color: var(--color-primary);
-}
-
 .gap-base {
   gap: var(--gap-base);
 }
@@ -709,6 +706,18 @@ img {
   background-color: var(--color-bg-white);
 }
 
+.bg-base {
+  background-color: var(--color-bg-base);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-dark {
+  background-color: var(--color-base);
+}
+
 .radius-base {
   border-radius: var(--radius-base);
 }
@@ -882,6 +891,10 @@ img {
 
 .box-shadow-dark {
   box-shadow: 0px 0.063rem 0.125rem 0px var(--color-box-shadow-dark);
+}
+
+.cta-banner-bg {
+  background: var(--color-base) url(../images/decorations.png) no-repeat right bottom;
 }
 
 @media screen and (min-width: 768px) {
