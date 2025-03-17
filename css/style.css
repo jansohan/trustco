@@ -9,6 +9,7 @@
   --color-black: #000;
   --color-bg-base: #f1f5f6;
   --color-bg-light: #f2f5f6;
+  --color-border-light: #f2f5f6;
   --color-bg-white: #FFF;
   --color-button-bg-base: #043a53;
   --color-button-text-base: #043a53;
@@ -68,7 +69,7 @@
 
   /* layout */
   --width-full: 100%;
-  --width-max-container: 88rem;
+  --width-max-container: 71.25rem;
   --width-full-viewport: 100vw;
   --height-full-viewport: 100vh;
 
@@ -78,6 +79,7 @@
   --radius-minor: 0.625rem;
   --radius-medium: 2.625rem;
   --radius-big: 3.438rem;
+  --radius-half: .5rem;
 
   /* display */
   --display-block: block;
@@ -241,6 +243,11 @@ img {
 .container {
   width: var(--width-full);
   max-width: var(--width-max-container);
+  margin: var(--mx-auto);
+  padding: var(--px-base);
+}
+
+.container-fluild {
   margin: var(--mx-auto);
   padding: var(--px-base);
 }
@@ -582,6 +589,14 @@ img {
   border-radius: var(--radius-medium);
 }
 
+.radius-half {
+  border-radius: var(--radius-half);
+}
+
+.border-light {
+  border: solid 1px var(--color-border-light);
+}
+
 .desktop-only {
   display: var(--none);
 }
@@ -746,6 +761,14 @@ img {
 
 /* //end utility styles */
 
+.card-column {
+  max-width: 23.75rem;
+}
+
+.hover-card:hover {
+  box-shadow: 0px 50px 80px 0px #043A5312;
+}
+
 .hero-inner h1 {
   line-height: var(--line-height-minor);
 }
@@ -868,8 +891,8 @@ img {
   }
 
   .width-medium {
-    width: 18rem;
-    margin-right: 2rem;
+    width: 16rem;
+    margin-right: 1rem;
   }
 
   #building-bridges h2 {
