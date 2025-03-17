@@ -521,4 +521,12 @@ img {
   .hero-inner-content {
     padding: var(--py-double);
   }
+  #trusted-brands .row {
+    gap: var(--gap-double);
+    text-align: var(--content-center);
+    font-size: var(--font-size-minor);
+  }
+  .brand-images {
+    gap: var(--gap-double);
+  }
 }
