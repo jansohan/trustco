@@ -612,11 +612,6 @@ img {
   font-size: var(--font-size-base-paragraph);
 }
 
-.width-medium {
-  width: 18rem;
-  margin-right: 2rem;
-}
-
 /* //end utility styles */
 
 .hero-inner h1 {
@@ -729,6 +724,11 @@ img {
   .site-header {
     background-color: var(--color-bg-base);
   }
+
+  .width-medium {
+    width: 18rem;
+    margin-right: 2rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -776,5 +776,37 @@ img {
     margin-left: -1.099rem;
     width: 2.199rem;
     height: 2.199rem;
+  }
+
+  #benefits {
+    padding: 3.125rem 0;
+  }
+
+  .benefit-header {
+    text-align: var(--content-center);
+    padding-bottom: 1rem;
+  }
+
+  .benefit-header h2 {
+    font-size: 1.875rem;
+    margin-bottom: 0;
+  }
+  
+  .benefit-header .button {
+    --font-size-base-button: .85rem;
+    --button-base: 0.25rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #benefits .heading-medium {
+    font-size: 1.25rem;
+  }
+  
+  #benefits .paragraph-medium {
+    font-size: 0.875rem;
+  }
+
+  .cards > div {
+    margin-bottom: 1rem;
   }
 }
