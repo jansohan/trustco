@@ -485,6 +485,10 @@ img {
   margin-top: 0;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .my-0 {
   margin: 0;
 }
@@ -895,6 +899,15 @@ img {
 
 .cta-banner-bg {
   background: var(--color-base) url(../images/decorations.png) no-repeat right bottom;
+}
+
+.site-footer {
+  padding: 5rem 0;
+}
+
+.site-footer nav li {
+  padding-left: 0;
+  font-size: var(--font-size-regular);
 }
 
 @media screen and (min-width: 768px) {
