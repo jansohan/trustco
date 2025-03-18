@@ -1264,6 +1264,30 @@ form .button {
   .site-credits .justify-content-end {
     justify-content: var(--content-center);
   }
+  
+  #contacts .hero-inner-content {
+    padding: 0;
+  }
+
+  .agree-checkbox {
+    font-size: 0.875rem;
+  }
+
+  #contact-form {
+    padding: 0;
+  } 
+  
+  #contact-form .row {
+    padding-bottom: 0;
+  } 
+  
+  #contact-form h2 {
+    font-size: 2rem;
+  }
+  
+  form .button {
+    width: var(--width-full);
+  }
 
 }
 
