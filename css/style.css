@@ -25,6 +25,7 @@
   --color-highlighten-02: #92a7b0;
   --color-pager: #92a7b0;
   --color-pager-active: #043A53;
+  --color-checkbox: #d4e0e5;
 
   /* spacing */
   --mx-auto: auto;
@@ -528,6 +529,10 @@ img {
   padding: 0;
 }
 
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
 .ml-1 {
   margin-left: 1rem;
 }
@@ -962,6 +967,75 @@ input:checked~.language-dropdown {
   display: var(--display-block);
 }
 
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  border: 1px solid #91A7B0;
+  min-height: 60px;
+  width: var(--width-full);
+  border-radius: var(--radius-minor);
+  padding: var(--p-small);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  padding-left: 4rem;
+}
+
+form input.name {
+  background-image: url(../images/nameto.svg);
+}
+
+form input.company {
+  background-image: url(../images/company.svg);
+}
+
+form input[type="email"] {
+  background-image: url(../images/emailto.svg);
+}
+
+form input[type="tel"] {
+  background-image: url(../images/callto.svg);
+}
+
+form input[type="checkbox"] {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+}
+
+form textarea {
+  resize: none;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+form .row>div {
+  margin-bottom: 1.875rem;
+}
+
+form .button {
+  line-height: var(--line-height-single);
+}
+
+.agree-checkbox input {
+  display: var(--none);
+}
+
+.agree-checkbox label:before {
+  content: "";
+  display: var(--inline-block);
+	cursor: var(--cursor-pointer);
+  height: 2rem;
+  width: 2rem;
+	background-color: var(--color-checkbox);
+  border-radius: var(--radius-full);
+}
+
+.agree-checkbox input:checked + label:before {
+  background: url(../images/check.svg) no-repeat transparent;
+}
+
 @media screen and (min-width: 768px) {
   .hero-wrapper {
     padding: var(--py-super-extra);
@@ -1186,7 +1260,7 @@ input:checked~.language-dropdown {
     text-align: var(--content-center);
     gap: var(--gap-base);
   }
-  
+
   .site-credits .justify-content-end {
     justify-content: var(--content-center);
   }
